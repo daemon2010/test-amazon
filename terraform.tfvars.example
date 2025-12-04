@@ -1,0 +1,22 @@
+# Example Terraform variables file
+# Copy this file to terraform.tfvars and modify the values as needed
+
+# AWS Region
+aws_region = "us-west-2"
+
+# Project Configuration
+project_name = "my-vpc-project"
+environment  = "dev"
+
+# Network Configuration
+vpc_cidr            = "10.0.0.0/16"
+public_subnet_cidr  = "10.0.1.0/24"
+private_subnet_cidr = "10.0.2.0/24"
+
+# Alternative example for different region and CIDR ranges:
+# aws_region = "us-east-1"
+# project_name = "production-vpc"
+# environment = "prod"
+# vpc_cidr = "172.16.0.0/16"
+# public_subnet_cidr = "172.16.1.0/24"
+# private_subnet_cidr = "172.16.2.0/24"
